@@ -73,15 +73,15 @@ body {
 .outerWrapper {
   margin: 0 auto;
   width: 90%;
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 .logo {
   margin-bottom: 0px; }
   .logo a {
     background-image: url(../img/OClogo.png);
-    background-size: 120px 220px;
-    height: 120px;
-    width: 220px;
+    background-size: 95px 174px;
+    height: 95px;
+    width: 174px;
     margin: 0 auto;
     display: inline-block;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body {
 
 .signIn {
   position: absolute;
-  top: 30px;
+  top: 20px;
   right: 5%;
   font-size: .7em;
   color: #636363; }
@@ -108,9 +108,9 @@ body {
 .search {
   color: #cdcdcd;
   position: absolute;
-  top: 100px;
+  top: 70px;
   right: 5%;
-  width: 122px;
+  width: 110px;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -145,7 +145,7 @@ body {
 
 .fa-search {
   position: absolute;
-  top: 97px;
+  top: 67px;
   font-size: .2em;
   right: 5.5%; }
 
@@ -283,16 +283,76 @@ body {
   border-radius: 10px;
   display: inline-block;
   float: left;
-  margin-top: 10px; }
+  margin-top: 10px;
+  background-image: url(../img/glow.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 160px 100%; }
 
 .aa {
-  margin-right: 2%; }
+  margin-right: 2%;
+  background-image: url(../img/dubber.jpeg);
+  background-size: contain;
+  background-size: 100%; }
 
 .areaSection {
   display: inline-block; }
 
+.featured {
+  margin-bottom: 40px; }
+
+.theater .sectionTwo {
+  border-radius: 0px 10px 10px 10px;
+  background-image: url(../img/burlesque.jpg); }
+.theater .smallEvent {
+  background-image: url(../img/cinderella.jpg);
+  background-size: cover; }
+.theater .aa {
+  background-image: url(../img/boheme.jpg);
+  background-size: cover; }
+
+.tab {
+  width: 100px;
+  height: 20px;
+  background-color: #cdcdcd;
+  margin-bottom: -2px;
+  color: #252525;
+  border-radius: 6px 6px 0px 0px;
+  text-align: center; }
+
+section2 {
+  border-radius: 0px 10px 10px 10px; }
+
 footer {
-  display: inline-block; }
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 40px; }
+  footer p {
+    color: #636363;
+    font-size: .7em; }
+
+.social {
+  margin-bottom: 5px;
+  font-size: 1.5em; }
+  .social li {
+    display: inline; }
+  .social .fa-facebook-square {
+    color: #3b5998; }
+  .social .fa-twitter-square {
+    color: #4099ff; }
+  .social .fa-instagram {
+    color: #3f729b; }
+  .social .fa-youtube-square {
+    color: #c4302b; }
+
+.follow {
+  display: inline-block;
+  float: left; }
+
+.contact {
+  display: inline-block;
+  float: right; }
 
 html {
   color: #222;

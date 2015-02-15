@@ -1,3 +1,46 @@
 footer {
 	display: inline-block;
+
+	p {
+		color: $fadedgrey;
+		font-size: .7em;
+	}
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.social {
+	margin-bottom: 5px;
+	li {
+		display: inline;
+
+	}
+
+	font-size: 1.5em;
+
+	.fa-facebook-square {
+		color:#3b5998;
+	}
+
+	.fa-twitter-square {
+		color:#4099ff;
+	}
+
+	.fa-instagram {
+		color:#3f729b;
+	}
+
+	.fa-youtube-square {
+		color:#c4302b;
+	}
+}
+
+.follow {
+	display: inline-block;
+	float: left;
+}
+
+.contact {
+	display: inline-block;
+	float: right;
 }

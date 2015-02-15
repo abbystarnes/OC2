@@ -81,17 +81,66 @@
 	float: left;
 	margin-top: 10px;
 
+	background-image: url(../img/glow.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 160px 100%;
+
 }
 
 
 .aa {
 	margin-right: 2%;
+	background-image: url(../img/dubber.jpeg);
+	background-size: contain;
+	background-size: 100%;
+
 	
 }
 
 .areaSection {
 	display: inline-block;
 }
+
+.featured {
+	margin-bottom: 40px;
+}
+
+.theater {
+	.sectionTwo {
+		border-radius: 0px 10px 10px 10px;
+		background-image: url(../img/burlesque.jpg);
+	}
+	
+	.smallEvent {
+		background-image: url(../img/cinderella.jpg);
+		background-size: cover;
+	}
+
+	.aa {
+		background-image: url(../img/boheme.jpg);
+		background-size: cover;
+	}
+
+	
+}
+
+.tab {
+	width: 100px;
+	height: 20px;
+	background-color: $lightgrey;
+	margin-bottom: -2px;
+	color: $charcoal;
+	border-radius: 6px 6px 0px 0px;
+	text-align: center;
+}
+
+section2 {
+	border-radius: 0px 10px 10px 10px;
+}
+
+
 
 
 
