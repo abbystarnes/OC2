@@ -74,7 +74,8 @@ body {
 .outerWrapper {
   margin: 0 auto;
   width: 90%;
-  margin-top: 10px; }
+  margin-top: 10px;
+  max-width: 780px; }
 
 .logo {
   margin-bottom: 0px; }
@@ -191,13 +192,24 @@ body {
   .third li {
     width: 18%; }
 
+.menuButton {
+  display: none;
+  padding: 15px;
+  margin: auto auto;
+  text-align: center;
+  padding-top: 20px; }
+  @media (max-width: 630px) {
+    .menuButton {
+      display: block; } }
+
 .sideNav {
   display: inline-block;
   float: left;
   background-color: #cdcdcd;
   padding-top: 5px;
   border: 2px solid #cdcdcd;
-  width: 23%; }
+  width: 23%;
+  margin-top: 30px; }
   .sideNav li {
     list-style: none;
     line-height: 1.2;
@@ -237,6 +249,7 @@ body {
   display: inline-block;
   height: 250px;
   width: 100%;
+  margin-top: 30px;
   background-image: url(../img/burning.jpg);
   background-size: cover;
   border: 2px solid #cdcdcd; }
@@ -326,9 +339,60 @@ body {
   width: 100px;
   height: 20px;
   background-color: #cdcdcd;
-  margin-bottom: -2px;
+  margin-bottom: -32px;
   color: #252525;
   text-align: center; }
+
+.sectionFeature {
+  border: 0px;
+  margin-top: 40px; }
+
+.theaterSection .tab {
+  width: 100%;
+  margin-top: 30px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px; }
+.theaterSection p {
+  line-height: 1.5;
+  font-size: .8em; }
+.theaterSection .leftinfo {
+  padding: none;
+  font-size: 1em;
+  height: 30px;
+  line-height: 2em; }
+  .theaterSection .leftinfo li {
+    padding-left: 0px;
+    margin-top: 10px; }
+  .theaterSection .leftinfo a {
+    font-size: .8em;
+    margin-top: 10px; }
+.theaterSection .rightinfo {
+  height: 30px;
+  line-height: 2em; }
+  .theaterSection .rightinfo li {
+    padding-right: 0px; }
+  .theaterSection .rightinfo a {
+    font-size: 1em; }
+
+table {
+  margin-top: 40px; }
+  table tr {
+    line-height: 2em; }
+  table td {
+    padding: 0px 20px 0px 0px; }
+
+.labels {
+  font-size: .7em;
+  margin-left: 15px; }
+
+.family {
+  font-weight: bold;
+  color: pink; }
+
+.free {
+  font-weight: bold;
+  color: blue; }
 
 footer {
   display: inline-block;

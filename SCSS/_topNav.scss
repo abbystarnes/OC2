@@ -65,3 +65,20 @@
 		}
 }
 
+
+
+.menuButton {
+
+	@include breakpoint(baby-bear) {
+			display: block;
+		}
+	display: none;	
+	padding: 15px;
+
+  // display: block;
+  margin: auto auto;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
