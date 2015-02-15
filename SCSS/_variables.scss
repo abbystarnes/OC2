@@ -5,3 +5,14 @@ $lime: #9bcc26;
 $lightgrey: #cdcdcd;
 $fadedgrey: #636363;
 $navbargrey:#323232;
+
+
+@mixin breakpoint($point) {
+	@if $point == baby-bear {
+		@media (max-width: 630px) {@content;}
+	}
+	@else if $point == mama-bear {
+		@media (min-width: 660px) {@content;}
+	}
+
+}

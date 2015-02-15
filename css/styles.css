@@ -61,7 +61,8 @@ table {
 body {
   background-color: #252525;
   font-family: 'News Cycle', sans-serif;
-  color: #cdcdcd; }
+  color: #cdcdcd;
+  font-size: .9em; }
 
 .clearfix:before, .clearfix:after {
   content: "";
@@ -90,13 +91,13 @@ body {
     text-align: center;
     padding: 0px;
     margin-top: 0px;
-    margin-left: -15px; }
+    margin-left: -12px; }
 
 .signIn {
   position: absolute;
   top: 20px;
   right: 5%;
-  font-size: .7em;
+  font-size: .8em;
   color: #636363; }
   .signIn li {
     display: inline; }
@@ -110,7 +111,7 @@ body {
   position: absolute;
   top: 70px;
   right: 5%;
-  width: 110px;
+  width: 112px;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -212,10 +213,17 @@ body {
       padding-bottom: 10px;
       height: 40px;
       line-height: 2em; }
+      @media (max-width: 630px) {
+        .sideNav li:last-child {
+          font-weight: regular;
+          font-size: .8em; } }
       .sideNav li:last-child a {
         color: #9bcc26;
         padding: 10px;
         line-height: 2em; }
+        @media (max-width: 630px) {
+          .sideNav li:last-child a {
+            padding: 0px; } }
         .sideNav li:last-child a i {
           padding: 10px 10px 10px 0px;
           line-height: 1em; }
@@ -231,8 +239,10 @@ body {
   width: 100%;
   background-image: url(../img/burning.jpg);
   background-size: cover;
-  border: 2px solid #cdcdcd;
-  border-radius: 10px; }
+  border: 2px solid #cdcdcd; }
+  @media (max-width: 630px) {
+    .bigBox {
+      height: 160px; } }
 
 .innerWrapper {
   width: 75%;
@@ -243,7 +253,6 @@ body {
 .eventinfo {
   position: absolute;
   bottom: 0px;
-  width: 50%;
   background-color: #252525; }
   .eventinfo li {
     display: inline;
@@ -256,17 +265,17 @@ body {
 
 .leftinfo {
   left: 0px;
-  border-radius: 0px 0px 0px 10px;
-  height: 25px; }
+  height: 25px;
+  width: 75%; }
   .leftinfo li {
     padding-left: 10px;
     padding-top: 5px; }
 
 .rightinfo {
   right: 0px;
-  border-radius: 0px 0px 10px 0px;
   height: 25px;
-  text-align: right; }
+  text-align: right;
+  width: 25%; }
   .rightinfo li {
     padding-right: 10px;
     padding-top: 5px; }
@@ -280,7 +289,6 @@ body {
   width: 49%;
   height: 160px;
   border: 2px solid #cdcdcd;
-  border-radius: 10px;
   display: inline-block;
   float: left;
   margin-top: 10px;
@@ -289,6 +297,9 @@ body {
   background-repeat: no-repeat;
   background-color: white;
   background-size: 160px 100%; }
+  @media (max-width: 630px) {
+    .smallEvent {
+      width: 100%; } }
 
 .aa {
   margin-right: 2%;
@@ -303,7 +314,6 @@ body {
   margin-bottom: 40px; }
 
 .theater .sectionTwo {
-  border-radius: 0px 10px 10px 10px;
   background-image: url(../img/burlesque.jpg); }
 .theater .smallEvent {
   background-image: url(../img/cinderella.jpg);
@@ -318,11 +328,7 @@ body {
   background-color: #cdcdcd;
   margin-bottom: -2px;
   color: #252525;
-  border-radius: 6px 6px 0px 0px;
   text-align: center; }
-
-section2 {
-  border-radius: 0px 10px 10px 10px; }
 
 footer {
   display: inline-block;
@@ -330,7 +336,7 @@ footer {
   margin-bottom: 40px; }
   footer p {
     color: #636363;
-    font-size: .7em; }
+    font-size: .8em; }
 
 .social {
   margin-bottom: 5px;

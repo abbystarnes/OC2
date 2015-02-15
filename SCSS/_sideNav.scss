@@ -9,6 +9,8 @@
 	border: 2px solid $lightgrey;
 	width: 23%;
 
+
+
 	li {
 		list-style: none;
 		line-height: 1.2;
@@ -16,7 +18,9 @@
 		text-align: center;
 		font-weight: bold;
 
-		
+
+
+
 
 		&:nth-child(7) {
 			height: 50px;
@@ -29,19 +33,32 @@
 			background-color: $charcoal;
 			padding-bottom: 10px;
 			height: 40px;
+					@include breakpoint(baby-bear) {
+			font-weight: regular;
+			font-size: .8em;
+		}
 			// border-radius: 0px 0px 10px 0px; 
 			
 			line-height: 2em;
 			a {color: $lime;
 				padding: 10px;
+
+						@include breakpoint(baby-bear) {
+							padding: 0px;
+						}
 				line-height: 2em;
 			i {
 				padding: 10px 10px 10px 0px;
 				line-height: 1em;
-			}	
+
+						@include breakpoint(baby-bear) {
+				// padding: 0px;
+						}
+				
 			}
 
 		}
+	}
 	}
 	a{
 	text-decoration: none;

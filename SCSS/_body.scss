@@ -8,7 +8,12 @@
 	background-image: url(../img/burning.jpg);
 	background-size: cover;
 	border: 2px solid $lightgrey;
-	border-radius: 10px;
+	// border-radius: 10px;
+	@include breakpoint(baby-bear) {
+			height: 160px;
+		}
+
+		
 }
 
 .innerWrapper {
@@ -21,7 +26,7 @@
 .eventinfo {
 	position: absolute;
 	bottom: 0px;
-	width: 50%;
+	
 	
 
 	li {
@@ -42,8 +47,9 @@
 
 .leftinfo {
 	left: 0px;
-	border-radius: 0px 0px 0px 10px;
+	// border-radius: 0px 0px 0px 10px;
 	height: 25px;
+	width: 75%;
 
 	li {
 		padding-left: 10px;
@@ -53,9 +59,10 @@
 
 .rightinfo {
 	right: 0px;
-	border-radius: 0px 0px 10px 0px;
+	// border-radius: 0px 0px 10px 0px;
 	height: 25px;
 	text-align: right;
+	width: 25%;
 
 	li {
 		padding-right: 10px;
@@ -74,9 +81,13 @@
 
 .smallEvent {
 	width: 49%;
+
+	@include breakpoint(baby-bear) {
+			width: 100%;
+		}
 	height: 160px;
 	border: 2px solid $lightgrey;
-	border-radius: 10px;
+	// border-radius: 10px;
 	display: inline-block;
 	float: left;
 	margin-top: 10px;
@@ -109,7 +120,7 @@
 
 .theater {
 	.sectionTwo {
-		border-radius: 0px 10px 10px 10px;
+		// border-radius: 0px 10px 10px 10px;
 		background-image: url(../img/burlesque.jpg);
 	}
 	
@@ -132,12 +143,12 @@
 	background-color: $lightgrey;
 	margin-bottom: -2px;
 	color: $charcoal;
-	border-radius: 6px 6px 0px 0px;
+	// border-radius: 6px 6px 0px 0px;
 	text-align: center;
 }
 
 section2 {
-	border-radius: 0px 10px 10px 10px;
+	// border-radius: 0px 10px 10px 10px;
 }
 
 
