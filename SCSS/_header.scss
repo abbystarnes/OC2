@@ -1,0 +1,91 @@
+
+.logo {
+
+	a{
+	background-image: url(../img/OClogo.png);
+	background-size: 120px 220px;
+	height: 120px;
+	width: 220px;
+	margin: 0 auto;
+	display: inline-block;
+	  background-repeat: no-repeat;
+	  background-size: contain;
+	  text-indent: -9999px;
+	  text-align: center;
+	  padding: 0px;
+	  margin-top: 0px; 
+	  margin-left: -15px;
+	 
+	}
+
+	margin-bottom: 0px;
+
+
+}
+
+.signIn {
+	position: absolute;
+	top: 30px;
+	right: 5%;
+	font-size: .7em;
+	color: $fadedgrey;
+	li {
+		display: inline;
+
+		&:first-child {
+			padding-right: 15px;
+		}
+	}
+	i {
+		padding-right: 7px;
+	}
+
+}
+
+
+.search {
+	color: $lightgrey;
+	position: absolute;
+	top: 100px;
+	right: 5%;
+	width: 122px;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 2px solid $fadedgrey;
+	background-color: transparent;
+}
+	::-webkit-input-placeholder { /* WebKit browsers */
+	    color:    $lime;
+	    font-size: 1.2em;
+	    line-height: 1.2em;
+	}
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color:    $lime;
+	   opacity:  1;
+	   font-size: 1.2em;
+	    line-height: 1.2em;
+	}
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color:    $lime;
+	   opacity:  1;
+	   font-size: 1.2em;
+	    line-height: 1.2em;
+	}
+	:-ms-input-placeholder { /* Internet Explorer 10+ */
+	   color:    $lime;
+	   font-size: 1.2em;
+	    line-height: 1.2em;
+
+}
+
+
+.fa-search {
+	position: absolute;
+	top: 97px;
+	font-size: .2em;
+	right: 5.5%;
+
+}
+
+  

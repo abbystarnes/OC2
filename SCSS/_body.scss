@@ -1,0 +1,97 @@
+.bigBox {
+	float: left;
+	position: relative;
+	display: inline-block;
+	height: 250px;
+	width: 100%;
+	
+	background-image: url(../img/burning.jpg);
+	background-size: cover;
+	border: 2px solid $lightgrey;
+	border-radius: 10px;
+}
+
+.innerWrapper {
+	width: 75%;
+	float: left;
+	display: inline-block;
+	margin-left: 2%;
+}
+
+.eventinfo {
+	position: absolute;
+	bottom: 0px;
+	width: 50%;
+	
+
+	li {
+		display: inline;
+		margin-bottom: 10px;
+		
+	}
+
+	a {
+		text-decoration: none;
+		color: $lightgrey;
+		font-size: .7em;
+		margin-bottom: 5px;
+	}
+	background-color: $charcoal;
+}
+
+
+.leftinfo {
+	left: 0px;
+	border-radius: 0px 0px 0px 10px;
+	height: 25px;
+
+	li {
+		padding-left: 10px;
+		padding-top: 5px;
+	}
+}
+
+.rightinfo {
+	right: 0px;
+	border-radius: 0px 0px 10px 0px;
+	height: 25px;
+	text-align: right;
+
+	li {
+		padding-right: 10px;
+		padding-top: 5px;
+
+		&:last-child a{
+			color: $lime;
+		}
+	}
+
+	i {
+		color: $lime;
+		padding: 0px 5px 0px 0px;
+	}
+}
+
+.smallEvent {
+	width: 49%;
+	height: 160px;
+	border: 2px solid $lightgrey;
+	border-radius: 10px;
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+
+}
+
+
+.aa {
+	margin-right: 2%;
+	
+}
+
+.areaSection {
+	display: inline-block;
+}
+
+
+

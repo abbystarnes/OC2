@@ -1,0 +1,49 @@
+
+
+.sideNav {
+	display: inline-block;
+	float: left;
+	background-color: $lightgrey;
+	padding-top: 5px;
+	// border-radius: 0px 0px 10px 0px;
+	border: 2px solid $lightgrey;
+	width: 23%;
+
+	li {
+		list-style: none;
+		line-height: 1.2;
+		height: 30px;
+		text-align: center;
+		font-weight: bold;
+		
+
+		&:nth-child(7) {
+			height: 50px;
+		}
+		&:nth-child(8) {
+			height: 50px;
+		}
+
+		&:last-child {
+			background-color: $charcoal;
+			padding-bottom: 10px;
+			height: 40px;
+			// border-radius: 0px 0px 10px 0px; 
+			
+			line-height: 2em;
+			a {color: $lime;
+				padding: 10px;
+				line-height: 2em;
+			i {
+				padding: 10px 10px 10px 0px;
+				line-height: 1em;
+			}	
+			}
+
+		}
+	}
+	a{
+	text-decoration: none;
+	color: $charcoal;
+	}
+}
