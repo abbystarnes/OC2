@@ -1,46 +1,86 @@
 footer {
 	display: inline-block;
+	position: absolute;
+	top: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	// height: 30px;
+	
+	left: 0;
+	font-size: .9em;
+
+	background-color: $lime;
 
 	p {
-		color: $fadedgrey;
 		font-size: .8em;
+		color: $fadedgrey;
+	}
+
+	a {
+		color: $fadedgrey;
+		// font-size: .9em;
+		padding-right: 5px;
+		padding-left: 15px;
 	}
 	width: 100%;
-	margin-bottom: 40px;
+	// margin-bottom: 40px;
+
 }
 
 .social {
-	margin-bottom: 5px;
+	// margin-bottom: 7px;
+	margin-top: -3px;
+	float:left;
 	li {
 		display: inline;
 
+
 	}
 
-	font-size: 1.5em;
-
-	.fa-facebook-square {
-		color:#3b5998;
+	a {
+		// font-size: 1.5em;
 	}
 
-	.fa-twitter-square {
-		color:#4099ff;
-	}
-
-	.fa-instagram {
-		color:#3f729b;
-	}
-
-	.fa-youtube-square {
-		color:#c4302b;
-	}
+	.fa {
+	color: $fadedgrey;
+}
 }
 
 .follow {
 	display: inline-block;
 	float: left;
+	// padding-top: 0px;
 }
 
 .contact {
 	display: inline-block;
-	float: right;
+	float: left;
 }
+
+
+.signIn {
+	position: relative;
+	float:right;
+	// top: 20px;
+	// right: 5%;
+	font-size: .8em;
+	color: $fadedgrey;
+	li {
+		display: inline;
+
+		&:first-child {
+			// padding-right: 15px;
+		}
+	}
+	i {
+		padding-right: 5px;
+	}
+
+	a {
+		// font-size: .8em;
+	}
+
+}
+
+
+

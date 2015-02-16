@@ -1,240 +1,111 @@
-.bigBox {
-	float: left;
-	position: relative;
-	display: inline-block;
-	height: 250px;
-	width: 100%;
-	margin-top: 30px;
-	background-image: url(../img/burning.jpg);
-	background-size: cover;
-	border: 2px solid $lightgrey;
-	// border-radius: 10px;
-	@include breakpoint(baby-bear) {
-			height: 160px;
-		}
 
-		
-}
 
-.innerWrapper {
-	width: 75%;
-	float: left;
-	display: inline-block;
-	margin-left: 2%;
-}
 
-.eventinfo {
-	position: absolute;
-	bottom: 0px;
-	
-	
+.area {
+	h2 {
+		font-size: 1.8em;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 20px;
 
-	li {
-		display: inline;
-		margin-bottom: 10px;
-		
 	}
-
-	a {
-		text-decoration: none;
-		color: $lightgrey;
-		font-size: .7em;
-		margin-bottom: 5px;
-	}
-	background-color: $charcoal;
-}
-
-
-.leftinfo {
-	left: 0px;
-	// border-radius: 0px 0px 0px 10px;
-	height: 25px;
-	width: 75%;
-
-	li {
-		padding-left: 10px;
-		padding-top: 5px;
-	}
-}
-
-.rightinfo {
-	right: 0px;
-	// border-radius: 0px 0px 10px 0px;
-	height: 25px;
-	text-align: right;
-	width: 25%;
-
-	li {
-		padding-right: 10px;
-		padding-top: 5px;
-
-		&:last-child a{
-			color: $lime;
-		}
-	}
-
-	i {
-		color: $lime;
-		padding: 0px 5px 0px 0px;
-	}
-}
-
-.smallEvent {
-	width: 49%;
-
-	@include breakpoint(baby-bear) {
-			width: 100%;
-		}
-	height: 160px;
-	border: 2px solid $lightgrey;
-	// border-radius: 10px;
 	display: inline-block;
 	float: left;
-	margin-top: 10px;
-
-	background-image: url(../img/glow.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-color: white;
-	background-size: 160px 100%;
-
-}
-
-
-.aa {
-	margin-right: 2%;
-	background-image: url(../img/dubber.jpeg);
-	background-size: contain;
-	background-size: 100%;
-
-	
-}
-
-.areaSection {
-	display: inline-block;
-}
-
-.featured {
+	width: 24.25%;
 	margin-bottom: 40px;
+
+	
+
 }
 
 .theater {
-	.sectionTwo {
-		// border-radius: 0px 10px 10px 10px;
+		margin-right: 1%;
+	}
+
+	.dance {
+		margin-right: 1%;
+	}
+
+	.art {
+		margin-right: 1%;
+	}
+
+.event {
+	border: 1px solid #ccc;
+	// margin-top: 2px;
+	padding: 5px;
+	margin-bottom: 5px;
+	
+
+
+
+}
+
+.location {
+	a {
+	font-size: 1em;
+	text-decoration: none;
+	color: $fadedgrey;
+}
+}
+
+.etitle {
+	a {
+		text-decoration: none;
+		color: black;
+		text-transform: capitalize; 
+		font-size: 1.8em;
+		font-weight: bold;
+
+	}
+	margin-bottom: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.date {
+	a {
+		text-decoration: none;
+		color: $fadedgrey;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 1em;
+	}
+
+	margin-bottom: 10px;
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.image {
+	background-image: url(../img/burlesque.jpg);
+	padding: 60px 0px;
+	max-width: 100%;
+	height: 120px;
+	margin: auto auto;
+	// background-size: 200px 120px;
+	background-repeat: no-repeat;
+	display: block;
+}
+
+.optionA {
+	.image {
 		background-image: url(../img/burlesque.jpg);
 	}
-	
-	.smallEvent {
-		background-image: url(../img/cinderella.jpg);
-		background-size: cover;
-	}
+}
 
-	.aa {
+.optionB {
+	.image {
 		background-image: url(../img/boheme.jpg);
-		background-size: cover;
-	}
-
-
-
-	
-}
-
-.tab {
-	width: 100px;
-	height: 20px;
-	background-color: $lightgrey;
-	margin-bottom: -32px;
-	color: $charcoal;
-	// border-radius: 6px 6px 0px 0px;
-	text-align: center;
-}
-
-section2 {
-	// border-radius: 0px 10px 10px 10px;
-}
-
-
-.sectionFeature {
-	border:0px;
-	margin-top: 40px;
-
-
-}
-
-.theaterSection {
-	.tab {
-		width: 100%;
-		margin-top: 30px;
-		font-weight: bold;
-		text-align: left;
-		padding-left: 20px;
-	}
-
-	p {
-		line-height: 1.5;
-		font-size: .8em;
-	}
-
-	.leftinfo {
-		padding: none;
-		font-size: 1em;
-		height: 30px;
-		line-height: 2em;
-
-		li {
-			padding-left: 0px;
-			margin-top: 10px;
-		}
-
-		a {
-			font-size: .8em;
-			margin-top: 10px;
-		}
-	}
-
-	.rightinfo {
-		height: 30px;
-		line-height: 2em;
-
-		li {
-			padding-right: 0px;
-		}
-		a {
-			font-size: 1em;
-		}
 	}
 }
 
-
-table {
-	margin-top: 40px;
-
-	tr {
-		line-height: 2em;
-	}
-
-	td {
-		padding: 0px 20px 0px 0px;
+.optionC {
+	.image {
+		background-image: url(../img/cinderella.jpg);
 	}
 }
-
-.labels {
-	font-size: .7em;
-	margin-left: 15px;
-}
-
-.family {
-	font-weight: bold;
-	color: pink; 
-}
-
-.free {
-	font-weight: bold;
-	color: blue;
-}
-
-
-
 
 
 

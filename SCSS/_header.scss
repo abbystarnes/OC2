@@ -1,19 +1,23 @@
 
 .logo {
 
+	background-position: center;
+	text-align: center;
+
 	a{
-	background-image: url(../img/OClogo.png);
-	background-size: 95px 174px;
-	height: 95px;
-	width: 174px;
+	background-image: url(../img/OCblack.png);
+	background-size: 85px 155px;
+	height: 85px;
+	width: 155px;
 	margin: 0 auto;
 	display: inline-block;
 	  background-repeat: no-repeat;
 	  background-size: contain;
+	  background-position: center;
 	  text-indent: -9999px;
 	  text-align: center;
 	  padding: 0px;
-	  margin-top: 0px; 
+	  margin-top: 20px; 
 	  margin-left: -12px;
 	 
 	}
@@ -23,69 +27,9 @@
 
 }
 
-.signIn {
-	position: absolute;
-	top: 20px;
-	right: 5%;
-	font-size: .8em;
-	color: $fadedgrey;
-	li {
-		display: inline;
-
-		&:first-child {
-			padding-right: 15px;
-		}
-	}
-	i {
-		padding-right: 7px;
-	}
-
-}
 
 
-.search {
-	color: $lightgrey;
-	position: absolute;
-	top: 70px;
-	right: 5%;
-	width: 112px;
-	border-left: none;
-	border-right: none;
-	border-top: none;
-	border-bottom: 2px solid $fadedgrey;
-	background-color: transparent;
-}
-	::-webkit-input-placeholder { /* WebKit browsers */
-	    color:    $lime;
-	    font-size: 1.2em;
-	    line-height: 1.2em;
-	}
-	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-	   color:    $lime;
-	   opacity:  1;
-	   font-size: 1.2em;
-	    line-height: 1.2em;
-	}
-	::-moz-placeholder { /* Mozilla Firefox 19+ */
-	   color:    $lime;
-	   opacity:  1;
-	   font-size: 1.2em;
-	    line-height: 1.2em;
-	}
-	:-ms-input-placeholder { /* Internet Explorer 10+ */
-	   color:    $lime;
-	   font-size: 1.2em;
-	    line-height: 1.2em;
-
-}
 
 
-.fa-search {
-	position: absolute;
-	top: 67px;
-	font-size: .2em;
-	right: 5.5%;
-
-}
 
   

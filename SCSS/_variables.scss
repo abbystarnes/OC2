@@ -1,10 +1,14 @@
 
 
-$charcoal: #252525;
+$charcoal: #fff;
 $lime: #9bcc26;
-$lightgrey: #cdcdcd;
+$lightgrey: black;
 $fadedgrey: #636363;
-$navbargrey:#323232;
+$navbargrey:#eee;
+$font: black;
+
+
+
 
 
 @mixin breakpoint($point) {
