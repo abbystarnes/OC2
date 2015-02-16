@@ -28,9 +28,10 @@
         <script src="js/jquery.flexslider.js"></script>
         <script type="text/javascript" charset="utf-8">
             $(window).load(function() {
-                $('.flexslider').flexslider(
-                      
-                    );
+                $('.flexslider').flexslider({
+                      controlNav: false,
+                      slideshow: false
+                    });
 
             });
         </script>
@@ -45,7 +46,15 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-    
+        <!-- TOP STICKY -->
+    <header>
+        
+            <ul class="signIn clearfix">
+           <li><a href="#"></a><i class="fa fa-user-plus"></i>sign up</li>
+           <li><a href="#"></a><i class="fa fa-circle-o-notch"></i>log in</li>
+       </ul>
+    </header>
+    <!-- BOTTOM STICKY -->
         <!-- HEADER -->
     <div class="outerWrapper clearfix">
        <h1 class="logo clearfix"><a href="index.html">One Columbia Arts &amp; History</a></h1>
@@ -56,32 +65,31 @@
 
 
        <!-- TOPNAV -->
-          <!-- <div class="menuButton"> -->
-        <!-- <a href="#" id="myLink8"><i class="fa fa-bars"></i>Menu</a> -->
-        <!-- </div> -->
+          <div class="menuButton">
+        <a href="#" id="myLink8"><i class="fa fa-bars"></i>Menu</a>
+        </div>
 
             <nav class=" links clearfix">
     <ul class="navigationH clearfix ">
         
     
-    <li class="events"><h2><a href="#" id="myLink">Events</a></h2>
-        <section class="hidingNav1 links clearfix">
-            <ul>
+    <li class="events menuTrigger"><h2><a href="#" id="myLink">Events</a></h2>
+            <ul class="dropdown hidingNav1 links clearfix">
                 <li><a href="#">theatre</a></li>
                 <li><a href="#">dance</a></li>
                 <li><a href="#">art &amp; film</a></li>
                 <li><a href="#">literature</a></li>
                 <li><a href="#">history</a></li>
-                <li><a href="#">classes &amp;<br> workshops</a></li>
-                <li><a href="#">galas &amp; <br>fundraisers</a></li>
+                <li><a href="#">classes &amp;  workshops</a></li>
+                <li><a href="#">galas &amp; fundraisers</a></li>
                 <li><a href="#">miscellaneous</a></li>
                 <li><a href="#">calendar</a></li>
             </ul>
-        </section></li>
+        </li>
 
-    <li class="participate"><h2><a href="#" id="myLink2">Participate</a></h2>
-        <section class="hidingNav2 links clearfix">
-            <ul>
+    <li class="participate menuTrigger"><h2><a href="#" id="myLink2">Participate</a></h2>
+        
+            <ul class="dropdown hidingNav2 links clearfix">
                 <li><a href="#">passport</a></li>
                 <li><a href="#">show &amp; tell</a></li>
                 <li><a href="#">film columbia</a></li>
@@ -91,39 +99,36 @@
                 <li><a href="#">weekly email sign up</a></li>
                 <li><a href="#">create an account/log in</a></li>
             </ul>
-        </section></li>
+        </li>
 
-    <li class="about"><h2><a href="#" id="myLink3">About</a></h2>
-    <section class="hidingNav3 links clearfix">
-    <ul>
+    <li class="about menuTrigger"><h2><a href="#" id="myLink3">About</a></h2>
+    <ul class="dropdown hidingNav3 links clearfix">
         <li><a href="#">One Columbia</a></li>
         <li><a href="#">columbia art</a></li>
         <li><a href="#">resources for artists</a></li>
         <li><a href="#">public art</a></li>
     </ul>
-    </section></li>
+    </li>
 
-       <li class="directories"> <h2><a href="#" id="myLink4">Directories</a></h2>
-    <section class="hidingNav4 links clearfix">
-    <ul>
+       <li class="directories menuTrigger"> <h2><a href="#" id="myLink4">Directories</a></h2>
+    <ul class="dropdown hidingNav4 links clearfix">
         <li><a href="#">Organizations</a></li>
         <li><a href="#">Venues</a></li>
         <li><a href="#">Artist Profiles</a></li>
     </ul></li>
-    </section>
 
-    <li class="search">
+    <li class="search menuTrigger">
         
-       
        <i class="fa fa-search"></i>
+       <input type="text" placeholder="keyword" name="search" id="search">
     </li>
 </ul>
 
 </nav>
 
-       </div>   
+         
         <!-- END TOPNAV -->
-
+<div class="innerWrapper clearfix">
        <!-- FLEXSLIDER -->
 
         <div class="flexslider">
@@ -146,7 +151,7 @@
 
        <!-- BODY -->
 
-       <div class="innerWrapper clearfix">
+       
             <!-- THEATRE -->
            <div class="area theater">
                <h2>Theater</h2>
@@ -154,7 +159,7 @@
                     <ul class="event optionA">
                     
                         <li class="date"><a href="#">February 15th - 17th</a></li>
-                      <li class="image">
+                      <img src="img/burlesque.jpg" alt="burlesque">
                           
                       </li>
                       <li class="etitle"><a href="#">henderson bros. burlesque 3.0</a></li>
@@ -167,7 +172,7 @@
                         
                         <li class="date"><a href="#">February 28th</a></li>
                        
-                        <li class="image">
+                        <img src="img/boheme.jpg" alt="La Boheme">
                           
                       </li>
                       <li class="etitle"><a href="#">la boheme</a></li>
@@ -180,7 +185,7 @@
                         
                         <li class="date"><a href="#">3/20 - 21</a></li>
                         
-                        <li class="image">
+                        <img src="img/cinderella.jpg" alt="Cinderella">
                           
                       </li>
                        
@@ -191,14 +196,14 @@
 
                      <ul class="event optionD">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">June 19th - 28th</a></li>
                         
-                        <li class="image">
+                        <img src="img/into.jpg" alt="Into the Woods">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Into the Woods</a></li>
+                        <li class="location"><a href="#">Chapin Theatre Company</a></li>
                     </ul>
                
 
@@ -212,51 +217,49 @@
                 
                     <ul class="event optionA">
                     
-                        <li class="date"><a href="#">February 15th - 17th</a></li>
-                      <li class="image">
-                          
-                      </li>
-                      <li class="etitle"><a href="#">henderson bros. burlesque 3.0</a></li>
-                        <li class="location"><a href="#">Trustus Theater</a></li>
+                        <li class="date"><a href="#">May 22nd - 23rd</a></li>
+                      <img src="img/usc.jpg" alt="USC Dance Company">
+                      <li class="etitle"><a href="#">Alice In Wonderland</a></li>
+                        <li class="location"><a href="#">USC Dance Company</a></li>
                     </ul>
               
 
                 
                     <ul class="event optionB">
                         
-                        <li class="date"><a href="#">February 28th</a></li>
+                        <li class="date"><a href="#">February 20th</a></li>
                        
-                        <li class="image">
+                        <img src="img/swing.jpg" alt="Swingin' at the Big Apple">
                           
                       </li>
-                      <li class="etitle"><a href="#">la boheme</a></li>
-                        <li class="location"><a href="#">The Palmetto Opera</a></li>
+                      <li class="etitle"><a href="#">Swingin' at the Big Apple</a></li>
+                        <li class="location"><a href="#">Historic Columbia</a></li>
                     </ul>
                 
 
                 
                     <ul class="event optionC">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">March 7th</a></li>
                         
-                        <li class="image">
+                        <img src="img/steppers.jpg" alt="Steppin' Day Party">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Steppers/ <br> Ballroomers<br> Day Party</a></li>
+                        <li class="location"><a href="#">GC Capital Steppers</a></li>
                     </ul>
 
                     <ul class="event optionD">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">March 28th</a></li>
                         
-                        <li class="image">
+                       <img src="img/pavement.jpg" alt="Pavement">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Pavement</a></li>
+                        <li class="location"><a href="#">Abraham.In.Motion</a></li>
                     </ul>
             </div>
             <!-- END DANCE -->
@@ -267,51 +270,52 @@
 
                    <ul class="event optionA">
                     
-                        <li class="date"><a href="#">February 15th - 17th</a></li>
-                      <li class="image">
+                        <li class="date"><a href="#"> 8/16/14- 3/15/15 </a></li>
+                     
+                     <img src="img/universe.jpg" alt="Building A Universe">
                           
                       </li>
-                      <li class="etitle"><a href="#">henderson bros. burlesque 3.0</a></li>
-                        <li class="location"><a href="#">Trustus Theater</a></li>
+                      <li class="etitle"><a href="#">Building A Universe</a></li>
+                        <li class="location"><a href="#">SC State Museum</a></li>
                     </ul>
               
 
                 
                     <ul class="event optionB">
                         
-                        <li class="date"><a href="#">February 28th</a></li>
+                        <li class="date"><a href="#">January 22nd - February 28th</a></li>
                        
-                        <li class="image">
+                        <img src="img/puzzle.jpg" alt="Puzzled Inspirations">
                           
                       </li>
-                      <li class="etitle"><a href="#">la boheme</a></li>
-                        <li class="location"><a href="#">The Palmetto Opera</a></li>
+                      <li class="etitle"><a href="#">Puzzled Inspirations: An exhibit of paintings, sculptures and collages by Patrick Parise</a></li>
+                        <li class="location"><a href="#">City Art</a></li>
                     </ul>
                 
 
                 
                     <ul class="event optionC">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">February 6th - 28th</a></li>
                         
-                        <li class="image">
+                        <img src="img/spong.jpg" alt="Laura Spong: Untitled">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Laura Spong: Untitled</a></li>
+                        <li class="location"><a href="#">if ART Gallery</a></li>
                     </ul>
 
                     <ul class="event optionD">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">February 13th - 28th</a></li>
                         
-                        <li class="image">
+                        <img src="img/blyth.jpg" alt="Eileen Blyth: Drawin the Line">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Eileen Blyth: Drawing the Line</a></li>
+                        <li class="location"><a href="#">Gallery 80808/Vista Studios</a></li>
                     </ul>
                
 
@@ -319,57 +323,57 @@
             <!-- END ART &amp; FILM -->
 
             <!-- CLASSES -->
-            <div class="area">
+            <div class="area class">
                <h2>Classes</h2>
 
                 
                     <ul class="event optionA">
                     
-                        <li class="date"><a href="#">February 15th - 17th</a></li>
-                      <li class="image">
+                        <li class="date"><a href="#">1/5 - 2/16</a></li>
+                      <img src="img/pottery.jpg" alt="Introduction to Pottery">
                           
                       </li>
-                      <li class="etitle"><a href="#">henderson bros. burlesque 3.0</a></li>
-                        <li class="location"><a href="#">Trustus Theater</a></li>
+                      <li class="etitle"><a href="#">Introduction to Pottery</a></li>
+                        <li class="location"><a href="#">Art Center and Backman Gallery</a></li>
                     </ul>
               
 
                 
                     <ul class="event optionB">
                         
-                        <li class="date"><a href="#">February 28th</a></li>
+                        <li class="date"><a href="#">1/7 - 2/18</a></li>
                        
-                        <li class="image">
+                       <img src="img/home.jpg" alt="Home School Art">
                           
                       </li>
-                      <li class="etitle"><a href="#">la boheme</a></li>
-                        <li class="location"><a href="#">The Palmetto Opera</a></li>
+                      <li class="etitle"><a href="#">Home School Art- Ages 5-9</a></li>
+                        <li class="location"><a href="#">Art Center and Backman Gallery</a></li>
                     </ul>
                 
 
                 
                     <ul class="event optionC">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">February 21st</a></li>
                         
-                        <li class="image">
+                        <img src="img/calligraphy.jpg" alt="Introduction to Calligraphy">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Introduction to Calligraphy: Beautiful Writing for any Occasion</a></li>
+                        <li class="location"><a href="#">South Carolina Calligraphy</a></li>
                     </ul>
 
                 <ul class="event optionD">
                         
-                        <li class="date"><a href="#">3/20 - 21</a></li>
+                        <li class="date"><a href="#">2/7 - 3/14</a></li>
                         
-                        <li class="image">
+                        <img src="img/quilt.jpg" alt="Quilting 101">
                           
                       </li>
                        
-                        <li class="etitle"><a href="#">cinderella</a></li>
-                        <li class="location"><a href="#">Columbia City Ballet</a></li>
+                        <li class="etitle"><a href="#">Quilting 101: Beginning Basics</a></li>
+                        <li class="location"><a href="#">Art Center and Backman Gallery</a></li>
                     </ul>
                    
                
@@ -381,20 +385,20 @@
        <!-- END BODY -->
        </div>
        <!-- FOOTER -->
-       <footer>
-       <p class="follow"><a class="fa fa-phone"></a>(803) 254-5008</p>
-                <p class="contact"><a class="fa fa-envelope"></a>info@onecolumbiasc.com</p>
+       <footer class="clearfix">
+       
+
                 <ul class="social">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa fa-youtube"></i></a></li>
                 </ul>
-
-                <ul class="signIn clearfix">
-           <li><a href="#"></a><i class="fa fa-user-plus"></i>sign up</li>
-           <li><a href="#"></a><i class="fa fa-circle-o-notch"></i>log in</li>
-       </ul>
+                
+                <div class="contacts">
+                <p class="follow"><a class="fa fa-phone"></a>(803) 254-5008</p>
+                <p class="contact"><a class="fa fa-envelope"></a>info@onecolumbiasc.com</p>
+                </div>
 
             </footer>   
              <!--  -->

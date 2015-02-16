@@ -1,5 +1,8 @@
 
-
+body {
+	position: relative;
+	padding-top: 40px;
+}
 
 .area {
 	h2 {
@@ -12,14 +15,17 @@
 	}
 	display: inline-block;
 	float: left;
-	width: 24.25%;
+	width: 100%;
 	margin-bottom: 40px;
-
+	padding: 2px;
 	
 
 }
 
-.theater {
+
+
+
+/*.theater {
 		margin-right: 1%;
 	}
 
@@ -30,10 +36,9 @@
 	.art {
 		margin-right: 1%;
 	}
-
+*/
 .event {
-	border: 1px solid #ccc;
-	// margin-top: 2px;
+	border: 2px solid $fadedgrey;
 	padding: 5px;
 	margin-bottom: 5px;
 	
@@ -77,7 +82,12 @@
 	margin-top: 5px;
 	display: inline-block;
 }
-
+img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
 .image {
 	background-image: url(../img/burlesque.jpg);
 	padding: 60px 0px;
@@ -86,6 +96,7 @@
 	margin: auto auto;
 	// background-size: 200px 120px;
 	background-repeat: no-repeat;
+	background-position: top center;
 	display: block;
 }
 
@@ -105,7 +116,97 @@
 	.image {
 		background-image: url(../img/cinderella.jpg);
 	}
+
+	
 }
+
+.optionD {
+	.image {
+		background-image: url(../img/into.jpg);
+	}
+}
+
+
+.dance {
+	.optionA {
+		.image {
+			background-image: url(../img/usc.jpg);
+		}
+	}
+
+	.optionB {
+		.image {
+			background-image: url(../img/swing.jpg);
+		}
+	}
+
+	.optionC {
+		.image {
+			background-image: url(../img/steppers.jpg);
+		}
+	}
+
+	.optionD {
+		.image {
+			background-image: url(../img/pavement.jpg);
+		}
+	}
+}
+
+.art {
+	.optionA {
+		.image {
+			background-image: url(../img/universe.jpg);
+		}
+	}
+
+	.optionB {
+		.image {
+			background-image: url(../img/puzzle.jpg);
+		}
+	}
+
+	.optionC {
+		.image {
+			background-image: url(../img/spong.jpg);
+		}
+	}
+
+	.optionD {
+		.image {
+			background-image: url(../img/blyth.jpg);
+		}
+	}
+}
+
+.class {
+
+	margin-bottom: 130px;
+	.optionA {
+		.image {
+			background-image: url(../img/pottery.jpg);
+		}
+	}
+
+	.optionB {
+		.image {
+			background-image: url(../img/home.jpg);
+		}
+	}
+
+	.optionC {
+		.image {
+			background-image: url(../img/calligraphy.jpg);
+		}
+	}
+
+	.optionD {
+		.image {
+			background-image: url(../img/blyth.jpg);
+		}
+	}
+}
+
 
 
 
