@@ -1,10 +1,15 @@
-.navigationH {
 
+   
+
+.navigationH {
+	ul {
+		display: none;
+	}
 
 	text-transform: uppercase;
 	margin: 0 auto;
 	margin-top: 20px;
-	text-align: left;
+	text-align: center;
 	// border: 2px solid #000;
 	width: 70%;
 	h2 {
@@ -59,8 +64,14 @@
 
 }
  
+ // MEDIA LARGE //
+  @media (min-width: 920px) {
 
-
+.navigationH {
+	ul {
+		display: inline;
+	}
+}
 	.dropdown {
 		padding: 0 0px;
 		transition: padding .3s ease;
@@ -160,7 +171,7 @@
 		
 	}
 }
-
+//END LARGE QUERY//
 
 .search {
 	color: $lightgrey;
@@ -192,8 +203,10 @@
 
 
 .topNav {
+
 	li {
 		display: inline-block;
+		width: 30%;
 		margin: none;
 		padding: none;
 		// padding-right: 5%;
@@ -257,14 +270,22 @@
 		}
 }
 
+.menuButton {
+	display: none;
+}
 
+ }
 
 .menuButton {
-
-	@include breakpoint(baby-bear) {
-			display: block;
-		}
-	display: none;	
+	.fa {
+		padding-right: 5px;
+	}
+	a {
+		text-decoration: none;
+		color: $lime;
+		font-size: 1.5em;
+	}
+	
 	padding: 15px;
 
   // display: block;
@@ -272,5 +293,11 @@
   text-align: center;
   padding-top: 20px;
 }
+
+ 
+
+
+
+
 
 

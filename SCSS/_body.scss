@@ -4,6 +4,9 @@ body {
 	padding-top: 40px;
 }
 
+
+
+
 .area {
 	h2 {
 		font-size: 1.8em;
@@ -13,6 +16,21 @@ body {
 		margin-bottom: 20px;
 
 	}
+	  @media (min-width: 550px) {
+   
+   	
+   		width: 50%;
+   	
+   
+}
+
+  @media (min-width: 940px) {
+   
+   	
+   		width: 25%;
+   	
+   
+}
 	display: inline-block;
 	float: left;
 	width: 100%;
@@ -23,8 +41,21 @@ body {
 }
 
 
+ @media (min-width: 550px) {
+   .art {
+margin-top: -300px;
+   }
+   	
+   		
+   	
+   
+}
 
-
+ @media (min-width: 940px) {
+   .art {
+margin-top: 0px;
+   }
+}
 /*.theater {
 		margin-right: 1%;
 	}
@@ -206,7 +237,6 @@ img {
 		}
 	}
 }
-
 
 
 
