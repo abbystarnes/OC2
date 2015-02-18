@@ -1,13 +1,8 @@
 footer {
 	display: block;
-	position: absolute;
-	bottom: 0px;
 	padding-top: 10px;
 	text-align: center;
 	padding-bottom: 10px;
-	// height: 30px;
-	
-	left: 0;
 	font-size: .9em;
 
 	background-color: $lime;
@@ -36,23 +31,12 @@ footer {
 
 header {
 	display: block;
-	margin: 0 auto;
-	text-align: right;
-	position: absolute;
-	top: 0px;
-	padding-top: 10px;
-	padding-right: 5%;
-	padding-bottom: 10px;
-	// height: 30px;
+	padding: 10px;
 	
 	left: 0;
 	font-size: .9em;
-
+	z-index: 10000;
 	background-color: $lime;
-
-	
-
-
 
 	p {
 		font-size: .8em;
@@ -82,16 +66,22 @@ header {
 	// right: 5%;
 	font-size: 1em;
 	color: $fadedgrey;
+	
+	i {
+		padding-right: 5px;
+	}
+}
+
+.signIn{
+	text-align: right;
+	
 	li {
-		display: inline;
+		display: inline-block;
 		margin: 0 auto;
 
 		&:first-child {
-			// padding-right: 15px;
+			padding: 5px;
 		}
-	}
-	i {
-		padding-right: 5px;
 	}
 }
 

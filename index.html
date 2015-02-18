@@ -48,83 +48,114 @@
         <!-- Add your site or application content here -->
         <!-- TOP STICKY -->
     <header>
+
+        <div class="menuButton"> 
+            <a href="#" id="myLink"><i class="fa fa-bars"></i>Menu</a>
+        </div>
         
-            <ul class="signIn clearfix">
+        <ul class="signIn clearfix">
            <li><a href="#"></a><i class="fa fa-user-plus"></i>sign up</li>
            <li><a href="#"></a><i class="fa fa-circle-o-notch"></i>log in</li>
        </ul>
+
+
+        <nav>
+            <ul class="hidingNav">
+                <li class="events mobile"><a href="#">Events</a></li>
+                <li class="participate mobile"><a href="#">Participate</a></li>
+                <li class="about mobile"><a href="#" id="myLink3">About</a></li>
+                <li class="directories mobile"><a href="#" id="myLink4">Directories</a></li>
+            </ul>
+        </nav>
+
     </header>
     <!-- BOTTOM STICKY -->
         <!-- HEADER -->
     <div class="outerWrapper clearfix">
        <h1 class="logo clearfix"><a href="index.html">One Columbia Arts &amp; History</a></h1>
+
    </div>
   
 
        <!-- END HEADER -->
+       
 
-
-       <!-- TOPNAV -->
-          <div class="menuButton"> 
-        <a href="#" id="myLink8"><i class="fa fa-bars"></i>Menu</a>
-        </div>
-
-            <nav class=" links clearfix">
-    <ul class="navigationH hidingNav clearfix ">
+        <nav class="clearfix outerwrapper">
+    
+            <ul class="desktopNav clearfix">
         
     
-    <li class="events menuTrigger"><h2><a href="#" id="myLink">Events</a></h2>
-            <ul class="dropdown hidingNav1 links clearfix">
-                <li><a href="#">theatre</a></li>
-                <li><a href="#">dance</a></li>
-                <li><a href="#">art &amp; film</a></li>
-                <li><a href="#">literature</a></li>
-                <li><a href="#">history</a></li>
-                <li><a href="#">classes &amp;  workshops</a></li>
-                <li><a href="#">galas &amp; fundraisers</a></li>
-                <li><a href="#">miscellaneous</a></li>
-                <li><a href="#">calendar</a></li>
-            </ul>
-        </li>
+                <li class="menuTrigger events mobile"><h2><a href="#">Events</a></h2>
+                    <ul class="dropdown">
+                        <li><a href="#">theatre</a></li>
+                        <li><a href="#">dance</a></li>
+                        <li><a href="#">art &amp; film</a></li>
+                        <li><a href="#">literature</a></li>
+                        <li><a href="#">history</a></li>
+                        <li><a href="#">classes &amp;  workshops</a></li>
+                        <li><a href="#">galas &amp; fundraisers</a></li>
+                        <li><a href="#">miscellaneous</a></li>
+                       
+                    </ul>
+                </li>
 
-    <li class="participate menuTrigger"><h2><a href="#" id="myLink2">Participate</a></h2>
+                
+                <li class=" menuTrigger participate mobile"><h2><a href="#">Participate</a></h2>
         
-            <ul class="dropdown hidingNav2 links clearfix">
-                <li><a href="#">passport</a></li>
-                <li><a href="#">show &amp; tell</a></li>
-                <li><a href="#">film columbia</a></li>
-                <li><a href="#">call for artists</a></li>
-                <li><a href="#">volunteer</a></li>
-                <li><a href="#">submit an event</a></li>
-                <li><a href="#">weekly email sign up</a></li>
-                <li><a href="#">create an account/log in</a></li>
-            </ul>
-        </li>
+                    <ul class="dropdown">
+                        <li><a href="#">passport</a></li>
+                        <li><a href="#">show &amp; tell</a></li>
+                        <li><a href="#">film columbia</a></li>
+                        <li><a href="#">call for artists</a></li>
+                        <li><a href="#">volunteer</a></li>
+                        <li><a href="#">submit an event</a></li>
+                        <li><a href="#">weekly email sign up</a></li>
+                        
+                    </ul>
+                
+                </li>
 
-    <li class="about menuTrigger"><h2><a href="#" id="myLink3">About</a></h2>
-    <ul class="dropdown hidingNav3 links clearfix">
-        <li><a href="#">One Columbia</a></li>
-        <li><a href="#">columbia art</a></li>
-        <li><a href="#">resources for artists</a></li>
-        <li><a href="#">public art</a></li>
-    </ul>
-    </li>
+                    
+                <li class=" menuTrigger about mobile"><h2><a href="#" id="myLink3">About</a></h2>
+                    
+                    <ul class="dropdown">
+                        <li><a href="#">One Columbia</a></li>
+                        <li><a href="#">columbia art</a></li>
+                        <li><a href="#">resources for artists</a></li>
+                        <li><a href="#">public art</a></li>
+                    </ul>
+                
+                </li>
 
-       <li class="directories menuTrigger"> <h2><a href="#" id="myLink4">Directories</a></h2>
-    <ul class="dropdown hidingNav4 links clearfix">
-        <li><a href="#">Organizations</a></li>
-        <li><a href="#">Venues</a></li>
-        <li><a href="#">Artist Profiles</a></li>
-    </ul></li>
-
-    <li class="search menuTrigger">
+  
+               <li class="menuTrigger directories mobile"> <h2><a href="#" id="myLink4">Directories</a></h2>
+                    
+                    <ul class="dropdown">
+                        <li><a href="#">Organizations</a></li>
+                        <li><a href="#">Venues</a></li>
+                        <li><a href="#">Artist Profiles</a></li>
+                    </ul>
+                
+                </li>
         
-       <i class="fa fa-search"></i>
-       <input type="text" placeholder="keyword" name="search" id="search">
-    </li>
-</ul>
+            </ul>
+        
+        </nav>
 
-</nav>
+       <div class="mobileButtons">
+
+            <button class="calendar">
+                <i class="fa fa-calendar"></i>
+                <a href="#">calendar</a>
+            </button>
+
+            <div class="search">
+               
+               <input  class= "search" type="text" placeholder="keyword search" name="search" id="search">
+            </div>
+
+        </div>
+            
 
          
         <!-- END TOPNAV -->
@@ -134,16 +165,17 @@
         <div class="flexslider">
   <ul class="slides">
     <li>
-    <img src="img/sangria-fine-arts-banner-catalog.jpg" alt="Cinderella">
+        <div></div>
+    </li>
+
+    <li>
+        <div></div>
     </li>
     <li>
-     
+        <div></div>
     </li>
     <li>
-      
-    </li>
-    <li>
-      <div src="slide4.jpg"></div>
+      <div></div>
     </li>
   </ul>
 </div>  
