@@ -1,4 +1,4 @@
-![One Columbia for Arts and History, Inc. logo](Images/OCblack.png)
+![One Columbia for Arts and History, Inc. logo](img/OCblack.png)
 
 # One Columbia for Arts and History, Inc.
 > redesign and responsive build of a non-profit website
